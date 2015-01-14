@@ -1,6 +1,6 @@
 {
   "name": "compare-urls",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Compare URLs by first normalizing them",
   "license": "MIT",
   "repository": "sindresorhus/compare-urls",
