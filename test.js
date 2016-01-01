@@ -1,11 +1,9 @@
-'use strict';
-var test = require('ava');
-var compareUrls = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(compareUrls('http://sindresorhus.com', 'http://sindresorhus.com/'));
-	t.assert(compareUrls('http://sindresorhus.com', '//sindresorhus.com'));
-	t.assert(compareUrls('http://sindresorhus.com', 'sindresorhus.com'));
-	t.assert(compareUrls('HTTP://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b'));
-	t.end();
+test(t => {
+	t.true(m('http://sindresorhus.com', 'http://sindresorhus.com/'));
+	t.true(m('http://sindresorhus.com', '//sindresorhus.com'));
+	t.true(m('http://sindresorhus.com', 'sindresorhus.com'));
+	t.true(m('HTTP://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b'));
 });
