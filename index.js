@@ -1,10 +1,11 @@
 'use strict';
 var normalizeUrl = require('normalize-url');
 
-module.exports = function (a, b) {
+module.exports = function (a, b, options) {
 	if (a === b) {
 		return true;
 	}
-
-	return normalizeUrl(a) === normalizeUrl(b);
+	
+	var opts = Object.assing({}, options);
+	return normalizeUrl(a, opts) === normalizeUrl(b, opts);
 };
