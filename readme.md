@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save compare-urls
+$ npm install compare-urls
 ```
 
 
 ## Usage
 
 ```js
-var compareUrls = require('compare-urls');
+const compareUrls = require('compare-urls');
 
 compareUrls('HTTP://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b');
 //=> true
@@ -22,4 +22,4 @@ compareUrls('HTTP://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

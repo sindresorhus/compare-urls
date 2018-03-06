@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
-test(t => {
+test('main', t => {
 	t.true(m('http://sindresorhus.com', 'http://sindresorhus.com/'));
 	t.true(m('http://sindresorhus.com', '//sindresorhus.com'));
 	t.true(m('http://sindresorhus.com', 'sindresorhus.com'));

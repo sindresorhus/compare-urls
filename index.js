@@ -1,7 +1,7 @@
 'use strict';
-var normalizeUrl = require('normalize-url');
+const normalizeUrl = require('normalize-url');
 
-module.exports = function (a, b) {
+module.exports = (a, b) => {
 	if (a === b) {
 		return true;
 	}
