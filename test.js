@@ -1,9 +1,9 @@
 import test from 'ava';
-import m from '.';
+import compareUrls from '.';
 
 test('main', t => {
-	t.true(m('http://sindresorhus.com', 'http://sindresorhus.com/'));
-	t.true(m('http://sindresorhus.com', '//sindresorhus.com'));
-	t.true(m('http://sindresorhus.com', 'sindresorhus.com'));
-	t.true(m('HTTP://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b'));
+	t.true(compareUrls('https://sindresorhus.com', 'https://sindresorhus.com/'));
+	t.true(compareUrls('http://sindresorhus.com', '//sindresorhus.com'));
+	t.true(compareUrls('https://sindresorhus.com', 'sindresorhus.com'));
+	t.true(compareUrls('HTTPS://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b'));
 });
