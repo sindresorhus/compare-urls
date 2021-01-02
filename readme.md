@@ -1,4 +1,4 @@
-# compare-urls [![Build Status](https://travis-ci.com/sindresorhus/compare-urls.svg?branch=master)](https://travis-ci.com/sindresorhus/compare-urls)
+# compare-urls
 
 > Compare URLs by first [normalizing](https://github.com/sindresorhus/normalize-url) them
 
