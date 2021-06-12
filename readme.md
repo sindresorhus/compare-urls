@@ -11,7 +11,7 @@ $ npm install compare-urls
 ## Usage
 
 ```js
-const compareUrls = require('compare-urls');
+import compareUrls from 'compare-urls';
 
 compareUrls('HTTPS://sindresorhus.com/?b=b&a=a', 'sindresorhus.com/?a=a&b=b');
 //=> true

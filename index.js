@@ -1,10 +1,13 @@
-'use strict';
-const normalizeUrl = require('normalize-url');
+import normalizeUrl from 'normalize-url';
 
-module.exports = (a, b) => {
-	if (a === b) {
+export default function compareUrls(firstUrl, secondUrl) {
+	if (firstUrl === secondUrl) {
 		return true;
 	}
 
-	return normalizeUrl(a) === normalizeUrl(b);
-};
+	const options = {
+		defaultProtocol: 'https:'
+	};
+
+	return normalizeUrl(firstUrl, options) === normalizeUrl(secondUrl, options);
+}
