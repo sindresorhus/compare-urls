@@ -13,7 +13,7 @@
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
-		"node": ">=12.20"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -30,10 +30,10 @@
 		"normalize"
 	],
 	"dependencies": {
-		"normalize-url": "^6.0.1"
+		"normalize-url": "^8.0.0"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"xo": "^0.40.2"
+		"ava": "^5.3.1",
+		"xo": "^0.56.0"
 	}
 }

@@ -6,7 +6,7 @@ export default function compareUrls(firstUrl, secondUrl) {
 	}
 
 	const options = {
-		defaultProtocol: 'https:'
+		defaultProtocol: 'https',
 	};
 
 	return normalizeUrl(firstUrl, options) === normalizeUrl(secondUrl, options);

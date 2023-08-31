@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install compare-urls
+```sh
+npm install compare-urls
 ```
 
 ## Usage
