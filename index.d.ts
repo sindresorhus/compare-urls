@@ -3,7 +3,7 @@ Compare URLs by first normalizing them.
 
 @param firstUrl - The first URL to compare.
 @param secondUrl - The second URL to compare.
-@returns A boolean indicating whether the URLs are the same.
+@returns A boolean indicating whether the URLs are the same after normalization.
 
 @example
 ```
